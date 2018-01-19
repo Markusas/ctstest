@@ -11,6 +11,8 @@ namespace ConsoleCalculator
         static void Main(string[] args)
         {
             Console.WriteLine("Good day!!!");
+            string name = Console.ReadLine();
+            Console.WriteLine("Labas, " + name);
             Console.ReadLine();
         }
     }
