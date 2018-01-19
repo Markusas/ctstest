@@ -24,5 +24,18 @@ namespace DesktopCalculator
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void executeButton_Click(object sender, RoutedEventArgs e)
+        {
+            //result.Content = num1.Text;
+            int inputNumber = int.Parse(num1.Text);
+            int squareNumber = inputNumber * inputNumber;
+            result.Content = squareNumber;
+        }
     }
 }
