@@ -37,5 +37,11 @@ namespace DesktopCalculator
             int squareNumber = inputNumber * inputNumber;
             result.Content = squareNumber;
         }
+
+        private void clearResult_Click(object sender, RoutedEventArgs e)
+        {
+            num1.Text = String.Empty;
+            result.Content = "";
+        }
     }
 }
