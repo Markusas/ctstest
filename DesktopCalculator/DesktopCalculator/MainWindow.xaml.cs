@@ -20,6 +20,8 @@ namespace DesktopCalculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int sum = 0;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -33,15 +35,30 @@ namespace DesktopCalculator
         private void executeButton_Click(object sender, RoutedEventArgs e)
         {
             //result.Content = num1.Text;
-            int inputNumber = int.Parse(num1.Text);
-            int squareNumber = inputNumber * inputNumber;
-            result.Content = squareNumber;
+            //int inputNumber = int.Parse(num1.Text);
+            //int squareNumber = inputNumber * inputNumber;
+            //result.Content = squareNumber;
+            result.Content = sum;
         }
 
         private void clearResult_Click(object sender, RoutedEventArgs e)
         {
             num1.Text = String.Empty;
             result.Content = "";
+            sum = 0;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+ 
+        }
+
+        private void plus_Click(object sender, RoutedEventArgs e)
+        {
+            int inputNumber = int.Parse(num1.Text);
+            result.Content = inputNumber;
+            sum = sum + inputNumber;
+            num1.Text = String.Empty;
         }
     }
 }
