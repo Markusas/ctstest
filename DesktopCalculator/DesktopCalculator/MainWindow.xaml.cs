@@ -60,7 +60,17 @@ namespace DesktopCalculator
 
         private void executeBtn_Click(object sender, RoutedEventArgs e)
         {
+            int partOne = int.Parse(part1);
+            int partTwo = int.Parse(part2);
+            if (action == "+")
+            {
+                resultBox.Text = (partOne + partTwo).ToString();
+            } else if (action == "-")
+            {
+                resultBox.Text = (partTwo - partOne).ToString();
+            }
 
+           part1 = resultBox.Text;
         }
     }
 }
