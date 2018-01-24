@@ -23,6 +23,11 @@ namespace TicTacToc
             {0, 0, 0 }
         };
 
+        private Player? DetermineWinner()
+        {
+            return null;
+        }
+
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
             string coordinates = ((Button)sender).Tag.ToString();
@@ -33,6 +38,11 @@ namespace TicTacToc
             { 
 
             _matrix[x, y] = (int)_player;
+
+            if (DetermineWinner() != null)
+                {
+
+                }
 
             ((Button)sender).Content = _player == Player.O ? "O" : "X";
             ((Button)sender).Foreground = _player == Player.O ? Brushes.Blue : Brushes.Red;
