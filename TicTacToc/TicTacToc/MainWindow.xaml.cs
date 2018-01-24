@@ -24,5 +24,12 @@ namespace TicTacToc
         {
             InitializeComponent();
         }
+
+        private void buttonClicked(object sender, RoutedEventArgs e)
+        {
+            string coordinates = ((Button)sender).Tag.ToString();
+            int x = int.Parse(coordinates[0].ToString());
+            int y = int.Parse(coordinates[1].ToString());
+        }
     }
 }
