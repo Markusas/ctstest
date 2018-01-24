@@ -29,6 +29,9 @@ namespace TicTacToc
             int x = int.Parse(coordinates[0].ToString()) - 1;
             int y = int.Parse(coordinates[1].ToString()) - 1;
 
+            if (_matrix[x, y] == 0)
+            { 
+
             _matrix[x, y] = (int)_player;
 
             ((Button)sender).Content = _player == Player.O ? "O" : "X";
@@ -36,7 +39,7 @@ namespace TicTacToc
 
             _player = _player == Player.O ? Player.X : Player.O;
 
-            
+            }
         }
     }
 }
