@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <TextBox x:Name="resultBox" HorizontalAlignment="Left" Height="23" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" IsEnabled="False" Grid.ColumnSpan="2" TextChanged="resultBox_TextChanged"/>
         <Button x:Name="num1Btn" Content="1" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Width="35" Height="35"/>
-        <Button x:Name="executeBtn" Content="=" HorizontalAlignment="Left" Margin="140,155,0,0" VerticalAlignment="Top" Width="35" Grid.Column="1" Height="35"/>
+        <Button x:Name="executeBtn" Content="=" HorizontalAlignment="Left" Margin="140,155,0,0" VerticalAlignment="Top" Width="35" Grid.Column="1" Height="35" Click="executeBtn_Click"/>
         <Button x:Name="num1Btn_Copy" Content="1" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Width="35" Height="35" Click="Num1Btn_Click"/>
         <Button x:Name="num0Btn" Content="0" HorizontalAlignment="Left" Margin="64,211,0,0" VerticalAlignment="Top" Width="35" Height="35" Click="Num1Btn_Click" Grid.ColumnSpan="2"/>
         <Button x:Name="num9Btn" Content="9" HorizontalAlignment="Left" Margin="40,155,0,0" VerticalAlignment="Top" Width="35" Height="35" Click="Num1Btn_Click" Grid.Column="1"/>
@@ -24,7 +24,7 @@
         <Button x:Name="num4Btn" Content="4" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Width="35" Height="35" RenderTransformOrigin="0.571,2.143" Click="Num1Btn_Click"/>
         <Button x:Name="num3Btn" Content="3" HorizontalAlignment="Left" Margin="40,54,0,0" VerticalAlignment="Top" Width="35" Height="35" Click="Num1Btn_Click" Grid.Column="1"/>
         <Button x:Name="num2Btn" Content="2" HorizontalAlignment="Left" Margin="64,54,0,0" VerticalAlignment="Top" Width="35" Height="35" RenderTransformOrigin="0.714,2.571" Click="Num1Btn_Click" Grid.ColumnSpan="2"/>
-        <Button x:Name="minusBtn" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1"/>
+        <Button x:Name="minusBtn" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="minusBtn_Click"/>
         <Button x:Name="plusBtn" Content="+" HorizontalAlignment="Left" Margin="140,54,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" RenderTransformOrigin="3.686,0.514" Click="plusBtn_Click"/>
     </Grid>
 </Window>

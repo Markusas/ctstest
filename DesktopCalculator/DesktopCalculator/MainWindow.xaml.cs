@@ -49,5 +49,18 @@ namespace DesktopCalculator
             part1 = "";
             action = "+";
         }
+
+        private void minusBtn_Click(object sender, RoutedEventArgs e)
+        {
+            resultBox.Text = resultBox.Text + "-";
+            part2 = part1;
+            part1 = "";
+            action = "-";
+        }
+
+        private void executeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
