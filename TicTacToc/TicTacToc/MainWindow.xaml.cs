@@ -38,10 +38,11 @@ namespace TicTacToc
             { 
 
             _matrix[x, y] = (int)_player;
+                Player?  winner = DetermineWinner();
 
-            if (DetermineWinner() != null)
+            if (winner != null)
                 {
-
+                    winnerLabel.Content = winner == Player.X ? "X" : "O" + "has won!";
                 }
 
             ((Button)sender).Content = _player == Player.O ? "O" : "X";
