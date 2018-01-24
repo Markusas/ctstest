@@ -15,15 +15,15 @@
         </Grid.ColumnDefinitions>
         <Button Content="Button" HorizontalAlignment="Left" Margin="117,40,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="117,40,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="117,40,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Tag="11" Click="buttonClicked"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="212,141,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="33"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="162,141,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="32"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="212,89,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="23"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="162,89,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="22"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="117,141,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="31"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="117,89,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="21"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="212,40,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="13"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="162,40,0,0" VerticalAlignment="Top" Width="35" Height="35" RenderTransformOrigin="1.543,0.571" Grid.Column="1" Click="buttonClicked" Tag="12"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="117,40,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Tag="11" Click="buttonClicked" FontWeight="Bold" FontSize="20"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="212,141,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="33" FontSize="20" FontWeight="Bold"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="162,141,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="32" FontSize="20" FontWeight="Bold"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="212,89,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="23" FontSize="20" FontWeight="Bold"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="162,89,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="22" FontSize="20" FontWeight="Bold"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="117,141,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="31" FontSize="20" FontWeight="Bold"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="117,89,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="21" FontSize="20" FontWeight="Bold"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="212,40,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="buttonClicked" Tag="13" FontSize="20" FontWeight="Bold"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="162,40,0,0" VerticalAlignment="Top" Width="35" Height="35" RenderTransformOrigin="1.543,0.571" Grid.Column="1" Click="buttonClicked" Tag="12" FontSize="20" FontWeight="Bold"/>
 
     </Grid>
 </Window>
