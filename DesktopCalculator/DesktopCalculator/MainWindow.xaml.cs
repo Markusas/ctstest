@@ -40,8 +40,8 @@ namespace DesktopCalculator
 
         private void executeBtn_Click(object sender, RoutedEventArgs e)
         {
-            decimal partOne = decimal.Parse(part1);
-            decimal partTwo = decimal.Parse(part2);
+            int partOne = int.Parse(part1);
+            int partTwo = int.Parse(part2);
 
             switch (action)
             {
@@ -55,7 +55,7 @@ namespace DesktopCalculator
                     resultBox.Text = (partOne * partTwo).ToString();
                     break;
                 case "/":
-                    resultBox.Text = (partOne / partTwo).ToString();
+                    resultBox.Text = ((double)partTwo / partOne).ToString();
                     break;
             }
 
