@@ -26,5 +26,7 @@
         <Button x:Name="num2Btn" Content="2" HorizontalAlignment="Left" Margin="64,54,0,0" VerticalAlignment="Top" Width="35" Height="35" RenderTransformOrigin="0.714,2.571" Click="Num1Btn_Click" Grid.ColumnSpan="2"/>
         <Button x:Name="minusBtn" Content="-" HorizontalAlignment="Left" Margin="140,104,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" Click="plusBtn_Click"/>
         <Button x:Name="plusBtn" Content="+" HorizontalAlignment="Left" Margin="140,54,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" RenderTransformOrigin="3.686,0.514" Click="plusBtn_Click"/>
+        <Button x:Name="divisionBtn" Content="/" HorizontalAlignment="Left" Margin="200,104,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" RenderTransformOrigin="3.686,0.514" Click="plusBtn_Click"/>
+        <Button x:Name="multiplicationBtn" Content="*" HorizontalAlignment="Left" Margin="200,54,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" RenderTransformOrigin="3.686,0.514" Click="plusBtn_Click"/>
     </Grid>
 </Window>

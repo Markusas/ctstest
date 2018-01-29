@@ -40,20 +40,27 @@ namespace DesktopCalculator
 
         private void executeBtn_Click(object sender, RoutedEventArgs e)
         {
-            int partOne = int.Parse(part1);
-            int partTwo = int.Parse(part2);
-            if (action == "+")
+            decimal partOne = decimal.Parse(part1);
+            decimal partTwo = decimal.Parse(part2);
+
+            switch (action)
             {
-                resultBox.Text = (partOne + partTwo).ToString();
-            }
-            else if (action == "-")
-            {
-                resultBox.Text = (partTwo - partOne).ToString();
+                case "+":
+                    resultBox.Text = (partOne + partTwo).ToString();
+                    break;
+                case "-":
+                    resultBox.Text = (partTwo - partOne).ToString();
+                    break;
+                case "*":
+                    resultBox.Text = (partOne * partTwo).ToString();
+                    break;
+                case "/":
+                    resultBox.Text = (partOne / partTwo).ToString();
+                    break;
             }
 
             part1 = resultBox.Text;
         }
-
 
     }
 }
