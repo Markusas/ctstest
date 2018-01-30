@@ -34,6 +34,9 @@ namespace DesktopCalculator
                     }
 
                     break;
+
+                default:
+                    throw new Exception("Action not found!");
             }
 
             return result;
