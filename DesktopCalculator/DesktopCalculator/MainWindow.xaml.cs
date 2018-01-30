@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 
 
@@ -44,7 +45,15 @@ namespace DesktopCalculator
             int partTwo = int.Parse(part2);
 
             Arithmetics arithmetics = new Arithmetics();
-            resultBox.Text = arithmetics.Calculate(partTwo, partOne, action).ToString();
+
+            try
+            {
+                resultBox.Text = arithmetics.Calculate(partTwo, partOne, action).ToString();
+            }
+            catch (DivideByZeroException ex)
+            {
+                resultBox.Text = "Division by 0 not allowed!";
+            }
 
             part1 = resultBox.Text;
         }
