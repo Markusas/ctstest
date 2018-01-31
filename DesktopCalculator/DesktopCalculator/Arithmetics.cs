@@ -8,9 +8,9 @@ namespace DesktopCalculator
 {
     public class Arithmetics
     {
-        public int Calculate(int num1, int num2, string action)
+        public double Calculate(double num1, double num2, string action)
         {
-            int result = 0;
+            double result = 0;
 
             switch (action)
             {
@@ -18,7 +18,7 @@ namespace DesktopCalculator
                     result = num2 + num1;
                     break;
                 case "-":
-                    result = num2 - num1;
+                    result = num1 - num2;
                     break;
                 case "*":
                     result = num2 * num1;
@@ -26,7 +26,7 @@ namespace DesktopCalculator
                 case "/":
                     if (num2 != 0)
                     {
-                        result = num2 / num1;
+                        result = (double)(num1 / num2);
                     }
                     else
                     {

@@ -28,5 +28,6 @@
         <Button x:Name="plusBtn" Content="+" HorizontalAlignment="Left" Margin="140,54,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" RenderTransformOrigin="3.686,0.514" Click="plusBtn_Click"/>
         <Button x:Name="divisionBtn" Content="/" HorizontalAlignment="Left" Margin="200,104,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" RenderTransformOrigin="3.686,0.514" Click="plusBtn_Click"/>
         <Button x:Name="multiplicationBtn" Content="*" HorizontalAlignment="Left" Margin="200,54,0,0" VerticalAlignment="Top" Width="35" Height="35" Grid.Column="1" RenderTransformOrigin="3.686,0.514" Click="plusBtn_Click"/>
+        <Button x:Name="clearBtn" Content="C" HorizontalAlignment="Left" Margin="200,155,0,0" VerticalAlignment="Top" Width="35" Grid.Column="1" Height="35" Click="clearBtn_Click"/>
     </Grid>
 </Window>

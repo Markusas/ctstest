@@ -41,8 +41,8 @@ namespace DesktopCalculator
 
         private void executeBtn_Click(object sender, RoutedEventArgs e)
         {
-            int partOne = int.Parse(part1);
-            int partTwo = int.Parse(part2);
+            double partOne = double.Parse(part1);
+            double partTwo = double.Parse(part2);
 
             Arithmetics arithmetics = new Arithmetics();
 
@@ -58,5 +58,10 @@ namespace DesktopCalculator
             part1 = resultBox.Text;
         }
 
+        private void clearBtn_Click(object sender, RoutedEventArgs e)
+        {
+            resultBox.Text = String.Empty;
+            part1 = "";
+        }
     }
 }
