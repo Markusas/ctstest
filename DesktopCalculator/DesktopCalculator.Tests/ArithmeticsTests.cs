@@ -10,13 +10,13 @@ namespace DesktopCalculator.Tests
         public void TwoPlusTwoIsFour()
         {
             //Arrange
-            int num1 = 2;
-            int num2 = 2;
+            double num1 = 2;
+            double num2 = 2;
             string action = "+";
-            int expectedResult = 4;
+            double expectedResult = 4;
             Arithmetics arithmetic = new Arithmetics();
             //Act
-            int actualResult = arithmetic.Calculate(num1, num2, action);
+            double actualResult = arithmetic.Calculate(num1, num2, action);
             //Assert
             Assert.AreEqual(expectedResult, actualResult);
         }
@@ -25,15 +25,15 @@ namespace DesktopCalculator.Tests
         public void FiveDividedByZeroThrowsException()
         {
             //Arrange
-            int num1 = 5;
-            int num2 = 0;
+            double num1 = 5;
+            double num2 = 0;
             string action = "/";
             Arithmetics arithmetic = new Arithmetics();
             bool isDivisionByZeroExceptionThrown = false;
             //Act
             try
             {
-                int actualResult = arithmetic.Calculate(num1, num2, action);
+                double actualResult = arithmetic.Calculate(num1, num2, action);
             }
             catch (DivideByZeroException ex)
             {
@@ -47,19 +47,19 @@ namespace DesktopCalculator.Tests
         public void NonExistingActionThrowsException()
         {
             //Arrange
-            int num1 = 5;
-            int num2 = 2;
+            double num1 = 5;
+            double num2 = 2;
             string action = "not found";
             Arithmetics arithmetic = new Arithmetics();
-            bool isExceptionThrown = false;
+            bool isDivisionByZeroExceptionThrown = false;
             //Act
             try
             {
-                int actualResult = arithmetic.Calculate(num1, num2, action);
+                double actualResult = arithmetic.Calculate(num1, num2, action);
             }
             catch (Exception ex)
             {
-                isExceptionThrown = true;
+                isDivisionByZeroExceptionThrown = true;
             }
             //Assert
             Assert.IsTrue(isDivisionByZeroExceptionThrown);
