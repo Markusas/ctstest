@@ -64,5 +64,20 @@ namespace DesktopCalculator.Tests
             //Assert
             Assert.IsTrue(isDivisionByZeroExceptionThrown);
         }
+
+        [TestMethod]
+        public void sixDivideByTwoIsThree()
+        {
+            //Arrange
+            double num1 = 6;
+            double num2 = 2;
+            string action = "/";
+            double exceptedResult = 3;
+            Arithmetics arithmetic = new Arithmetics();
+            //Act
+            double actualResult = arithmetic.Calculate(num1, num2, action);
+            //Assert
+            Assert.AreEqual(exceptedResult, actualResult);
+        }
     }
 }
