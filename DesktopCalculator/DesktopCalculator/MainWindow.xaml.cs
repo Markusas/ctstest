@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -13,6 +14,7 @@ namespace DesktopCalculator
         private string part1 = "";
         private string part2 = "";
         private string action;
+        private bool signSelect = false;
 
 
         public MainWindow()
@@ -25,17 +27,33 @@ namespace DesktopCalculator
             string buttonValue = ((Button)sender).Content.ToString();
             resultBox.Text = resultBox.Text + ((Button)sender).Content;
             part1 = part1 + buttonValue;
+            signSelect = false;
         }
 
 
 
-        private void plusBtn_Click(object sender, RoutedEventArgs e)
+        private void action_Click(object sender, RoutedEventArgs e)
         {
             string buttonValue = ((Button)sender).Content.ToString();
+
+
+            if (signSelect)
+            {
+                resultBox.Text = resultBox.Text.Substring(0, resultBox.Text.Length - 1).ToString();
+
+            }
+            else
+            {
+                part2 = part1;
+                part1 = "";
+            }
+
             resultBox.Text = resultBox.Text + ((Button)sender).Content;
-            part2 = part1;
-            part1 = "";
+            signSelect = true;
+
+            
             action = buttonValue;
+
         }
 
 
